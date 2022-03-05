@@ -1,0 +1,26 @@
+
+:root {
+     
+     --appbar_color : #1B5E20;
+     
+     --home_link_color : #1B5E20 ;
+     
+     /*  border color of topic and reply and bar  */
+     --green_border : #2E7D32;
+     
+     --topic_header_bg : #C8E6C9;
+     
+     --topic_border_width : 1px;
+     
+     --body_bg : #A5D6A7;
+     
+     --reply_blockquote_bg : #E0E0E0;
+     
+     --loader_bg : #E8F5E9;
+     
+     --loader_border : #2E7D32;
+}
+
+
+
+

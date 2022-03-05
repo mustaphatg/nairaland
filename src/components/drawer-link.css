@@ -1,0 +1,16 @@
+
+.load_container {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.load_container .circle{
+     color : var(--green_border) ;
+}
+
+
+.acc_header {
+     color: var(--green_border);
+}

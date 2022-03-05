@@ -1,0 +1,90 @@
+
+
+.reply__container {
+     padding-left: 4%;
+     padding-right: 2%;
+}
+
+
+.reply{
+     width: 100%;
+     display: block;
+     border-radius : 5px;
+     border : var(--topic_border_width) solid var(--green_border) ;
+}
+
+.reply .reply__header{
+     display: flex;
+     align-items: flex-start;
+     padding: 4px;
+     background: var(--topic_header_bg) ;
+     margin: 0px;
+     border-radius: 5px;
+     border-bottom-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+}
+
+.reply__header img{
+     height: 60px;
+     width: 60px;
+     border-radius: 50%;
+}
+
+.reply__header .info{
+     padding-top: 5px;
+     margin-left: 15px;
+     flex-grow: 1;
+     display: flex;
+     flex-direction: column;
+}
+
+.reply__header .info p {
+     margin: 0px;
+     padding: 0px;
+}
+
+
+.reply__container  .bar {
+     height: 50px;
+     margin-left: 5%;
+     padding: 5px;
+     border-left: var(--topic_border_width) solid var(--green_border) ;
+}
+
+
+.reply__body p{
+     padding: 5px;
+     word-break: break-word;
+}
+
+.reply__body img {
+     height: auto;
+     width: 100%;
+}
+
+
+.reply__body img.faces {
+     height: auto;
+     width: auto !important;
+}
+
+
+.reply__body blockquote {
+     margin: 8px 0px;
+     background: var(--reply_blockquote_bg) ;
+     padding: 5px;
+     border-radius: 3px;
+}
+
+
+.reply__body blockquote a:first-child {
+     pointer-events: none;
+     color:#2E7D32 ;
+     text-decoration: none;
+     margin-bottom: 5px;
+}
+
+
+.reply__body a:first-child::after{
+     content: 9;
+}
