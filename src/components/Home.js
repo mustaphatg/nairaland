@@ -46,7 +46,7 @@ const Home = props =>{
      const home = useSelector(state => state.home)
      
      
-     if(home.length == 0){
+     if(home.length === 0){
           return <HomeLoader />
      }
      

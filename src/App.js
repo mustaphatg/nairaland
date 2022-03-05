@@ -18,10 +18,9 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const App = props => {
-     
-    const home = useSelector(state => state.home)
+
     const dispatch = useDispatch()
-    const [my_theme, setTheme] = useState(false)
+  
     
     const classes = useStyles()
     
@@ -30,7 +29,7 @@ const App = props => {
     useEffect(() => {
          dispatch( { type : "FETCH_HOME_DATA" })  
          dispatch( { type : "FETCH_SECTION_DATA" })  
-    }, [])
+    }, [dispatch])
     
     
    

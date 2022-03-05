@@ -1,6 +1,5 @@
 import React from "react"
 import { useSelector  } from "react-redux"
-import HomeLoader from "./HomeLoader"
 import CircularProgress from "@material-ui/core/CircularProgress"
 import  "./drawer-link.css"
 import  { Link } from "react-router-dom"
@@ -25,7 +24,7 @@ function Load(){
 
 function NavLink(props){
      
-     var { href, text, title } = props.data
+     var { href, text} = props.data
      
      return (
           <ListItem 
@@ -45,7 +44,7 @@ const DrawerData = props => {
      const section = useSelector(state => state.section )
     
     
-    if(section == "loading"){
+    if(section === "loading"){
          return <Load />
     }
     
