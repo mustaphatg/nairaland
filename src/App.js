@@ -13,8 +13,8 @@ const useStyles = makeStyles(theme => ({
      shift : {
           [theme.breakpoints.up("md")] : {
                marginLeft : "300px",
-               width : "60%",
-               margin : "auto"
+               width : "600px",
+               fontSize : ""
                
           }
      }
