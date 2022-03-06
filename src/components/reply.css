@@ -11,6 +11,7 @@
      display: block;
      border-radius : 5px;
      border : var(--topic_border_width) solid var(--green_border) ;
+     background: var(--topic_header_bg) ;
 }
 
 .reply .reply__header{

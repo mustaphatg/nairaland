@@ -8,8 +8,7 @@ import  { useSelector, useDispatch } from "react-redux"
 
 const useStyles = makeStyles(theme => ({
      phoneDrawer : {
-          width : "70%" ,
-          background : "var(--body_bg)"
+          width : "70%" 
      },
      
      toolBar : {
@@ -17,8 +16,7 @@ const useStyles = makeStyles(theme => ({
      },
      
      desktopPaper : {
-          width : "240px",
-          backgroundColor : "var(--body_bg)"
+          width : "240px"
      }
 }))
 
