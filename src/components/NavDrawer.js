@@ -30,7 +30,7 @@ const NavDrawer = props => {
     
     
     function toggleDrawer(){
-         dispatch({ type : "TOGGLE_DRAWER" })
+         dispatch({ type : "TOGGLE_DRAWER" , paylaod : false })
     }
     
      var drawer = useSelector(state => state.drawer)

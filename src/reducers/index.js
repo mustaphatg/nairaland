@@ -20,7 +20,10 @@ var Reducer = (state = init, action) =>{
      }
      
      if(type == "TOGGLE_DRAWER"){
-          return {...state, drawer : !state.drawer }
+          //if(payload == false) {
+               return {...state, drawer : payload } 
+          //}
+          
      }
      
      

@@ -9,7 +9,7 @@ import axios from "axios"
  function* fetchHomeData(){
      try{
           var {data} = yield call(getHome)
-          console.log("in saga ", data)
+          console.log("Home => Success")
           
           yield put({ 
                type : "SAVE_HOME_DATA", 
@@ -24,7 +24,7 @@ import axios from "axios"
 function* fetchSectionData(){
      try{
           var {data} = yield call(getSection)
-          
+          console.log("Section => Success")
           yield put({ 
                type : "SAVE_SECTION_DATA", 
                payload : { data : data  }

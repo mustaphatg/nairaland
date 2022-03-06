@@ -1,7 +1,7 @@
 import React,{ useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import Toolbar from "@material-ui/core/Toolbar"
-import { useDispatch }  from "react-redux"
+import { useDispatch, useSelector }  from "react-redux"
 import { getTopic } from "../api"
 import Loader from "./Loader"
 import TopicHeader from "./TopicHeader"
@@ -14,16 +14,19 @@ const Topic = props => {
     var [topic, setTopic] = useState({})
     var [ready, setReady] = useState(false)
     
+    
     var {slug} = useParams()
     slug = decodeURIComponent(slug)
     
     
     useEffect(() =>{
          
+         
          getTopic(slug)
          .then(result => {
               setTopic(result.data)
               setReady(ready => !ready)
+              
          })
          .catch(er => {
               console.log(er)

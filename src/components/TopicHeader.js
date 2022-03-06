@@ -17,6 +17,7 @@ const paper = {
 const TopicHeader = props => {
     
     const topic = props.topic
+   
  
     return (
           <>
@@ -32,13 +33,18 @@ const TopicHeader = props => {
                          <div className="topic__header"> 
                               <div> <img src="/1.jpg" /> </div>            
                               <div className="info">
-                                   <p> {  topic.creator} </p>
-                                   <small> 6am </small>
+                                   <p className="user_name" > {  topic.creator} </p>
+                                   <small>  </small>
                               </div>
                          </div>
                          
                          <div className="topic__body">
                                <p dangerouslySetInnerHTML= {{ __html: topic.body }}  />          
+                              
+                              {  
+                                   topic.images.map((el, i) => <img key={i} src={el} /> )
+                              }
+                              
                          </div>
                     </div>
                     

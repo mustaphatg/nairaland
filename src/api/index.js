@@ -5,15 +5,15 @@ import axios from "axios"
 
 
 var url = "https://nairaland-20.herokuapp.com/api/"
- // url = "http://localhost:8000/api/"
+  //url = "http://localhost:8000/api/"
 
 export function getHome(){
-     console.log( "calling" )
+     console.log( "Getting Home" )
      return axios.get(url+"home")
 }
 
 export function getSection(){
-     console.log( "calling section" )
+     console.log( "Getting section" )
      return axios.get(url+"section")
 }
 
@@ -21,5 +21,12 @@ export function getSection(){
 export function getTopic(slug){
      return axios.post(url+"topic", {
           topic_url : slug
+     })
+}
+
+
+export function getCategory(name){
+     return axios.post(url+"category", {
+          name : name
      })
 }

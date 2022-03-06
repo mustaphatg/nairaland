@@ -29,7 +29,7 @@ const NavBar = props => {
      const dispatch = useDispatch()
      
      function toggleDrawer(){
-         dispatch({ type : "TOGGLE_DRAWER" })
+         dispatch({ type : "TOGGLE_DRAWER",  payload : true })
     }
 
      return (
@@ -40,7 +40,7 @@ const NavBar = props => {
                               <MenuIcon color="inherit" />
                          </IconButton>
                          <Typography variant="h6">
-                              Nairaland 2.0.1
+                              Nairaland 2.0
                          </Typography>
                     </Toolbar>
               </AppBar>
