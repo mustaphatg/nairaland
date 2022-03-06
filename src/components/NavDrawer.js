@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
      },
      
      desktopPaper : {
-          width : "240px"
+          width : "240px",
      }
 }))
 

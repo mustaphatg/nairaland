@@ -76,7 +76,11 @@ const Category = props => {
     
     
     
+    
+    
     useEffect(() => {
+         setCategory("loading")
+         
          dispatch({ type : "TOGGLE_DRAWER" , payload : false })              
          
          // fetch Category

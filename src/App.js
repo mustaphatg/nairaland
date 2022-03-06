@@ -12,8 +12,8 @@ import Category from "./components/Category"
 const useStyles = makeStyles(theme => ({
      shift : {
           [theme.breakpoints.up("md")] : {
-               marginLeft : "250px",
-               width : "400px",
+               marginLeft : "300px",
+               width : "500px",
                margin : "auto"
                
           }

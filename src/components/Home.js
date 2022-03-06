@@ -16,6 +16,8 @@ const useStyles = makeStyles(theme => ({
           borderBottom : "var(--topic_border_width) solid var(--green_border)",
           "color" : "var(--home_link_color)"
      }
+     
+
 }))
 
 
@@ -28,7 +30,8 @@ const NairaLink = props =>{
      
      return (
           <ListItem 
-               button 
+               button
+               divider
                component={Link} 
                to={"/topic/"+url} 
                className= { classes.listItem}

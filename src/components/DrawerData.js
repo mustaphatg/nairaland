@@ -11,6 +11,8 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Accordion from '@material-ui/core/Accordion';
+import { makeStyles } from "@material-ui/core/styles"
+
 
 function Load(){
      return (
@@ -21,16 +23,31 @@ function Load(){
 }
 
 
+const useStyles = makeStyles(theme => ({
+     root : {
+          width : "100%",
+          color : "green"
+     }
+}))
+
 
 function NavLink(props){
      
-     var { href, text} = props.data
+     const classes = useStyles()
+     
+     var { href, text} = props.data 
+     var id = props.id
+     
+     if(id === 0) {
+          return null
+     }
      
      return (
           <ListItem 
                button
                component= {Link}
                to = { "/category"+href }
+               classes = {{ root : classes.root }}
           >
                <ListItemText primary= { text } />
           </ListItem>
@@ -57,7 +74,7 @@ const DrawerData = props => {
                     </AccordionSummary>
                     <AccordionDetails>
                          <List>
-                              { section.general.map((el, i) => <NavLink key= { i } data={el} />  )  }             
+                              { section.general.map((el, i) => <NavLink key= { i } id= { i } data={el} />  )  }             
                          </List>
                     </AccordionDetails>
                </Accordion>
@@ -68,7 +85,7 @@ const DrawerData = props => {
                     </AccordionSummary>
                     <AccordionDetails>
                          <List>
-                              { section.entertainment.map((el, i) => <NavLink key= { i } data={el} />  )  }             
+                              { section.entertainment.map((el, i) => <NavLink id= { i } key= { i } data={el} />  )  }             
                          </List>
                     </AccordionDetails>
                </Accordion>
@@ -79,7 +96,7 @@ const DrawerData = props => {
                     </AccordionSummary>
                     <AccordionDetails>
                          <List>
-                              { section.science.map((el, i) => <NavLink key= { i } data={el} />  )  }             
+                              { section.science.map((el, i) => <NavLink key= { i } id= {i} data={el} />  )  }             
                          </List>
                     </AccordionDetails>
                </Accordion>               
