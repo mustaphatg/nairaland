@@ -1,6 +1,6 @@
 
 ## Nairaland Frontend
-<img src="https://github.com/mustaphatg/nairaland/blob/main/Osco%20camp%20-%20Github.png" >
+<img src="https://github.com/mustaphatg/nairaland/blob/main/Nairalnd%20-%20Github.png" >
 
 A Reactjs web application that scrapes and  displays the content of https://nairaland.com ( the most popular web forum in Africa) in a nice ui designed with Material ui.
 
