@@ -7,7 +7,7 @@ import axios from "axios"
 // var url = "https://nairaland-20.herokuapp.com/api/"
   //url = "http://localhost:8000/api/"
 
-var url = "https://nairaland.mustapha.com.ng"
+var url = "https://nairaland.mustapha.com.ng/api/"
 
 export function getHome(){
      console.log( "Getting Home" )
