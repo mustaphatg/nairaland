@@ -10,4 +10,4 @@ Scraping the data was not an easy task. Nairaland is the most popular web forum 
 
 
 ## Hosted at
-https://nairaland-v2.netlify.app
+https://nairaland1.netlify.app
