@@ -6,7 +6,7 @@ A Reactjs web application that scrapes and  displays the content of https://nair
 
 
 ## How I scraped the data
-Scraping the data was not an easy task. Nairaland is the most popular web forum in Africa and as a result of this, they made their layout using the table tag of HTML. This approach made it difficult to write a scraping script that will sort and extract the content from the forum . PHp/Laravel was later used to scrape the content and develop the api that the front-end component consumes. The laravel script can be found at https://github.com/mustaphatg/nairaland-backend.
+Scraping the data was not an easy task. Nairaland is the most popular web forum in Africa and as a result of this, they made their layout using the table tag of HTML. This approach made it difficult to write a scraping script that will sort and extract the content from the forum . PHP/Laravel was later used to scrape the content and develop the api that the front-end component consumes. The laravel script can be found at https://github.com/mustaphatg/nairaland-backend.
 
 
 ## Hosted at
